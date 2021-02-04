@@ -5,20 +5,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final pinkColor = const Color(0xffefcfd4);
+  final beigeColor = const Color(0xfff6e6d1);
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Test",
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: pinkColor,
         body: Row(
           children: [
             Expanded(
                 flex: 1,
                 child: Container(
                   // color: Colors.red,
-                  decoration: BoxDecoration(color: Colors.green, boxShadow: [
+                  decoration: BoxDecoration(color: beigeColor, boxShadow: [
                     BoxShadow(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withOpacity(0.2),
                         spreadRadius: 5,
                         blurRadius: 5,
                         offset: Offset(5, 0))
